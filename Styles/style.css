@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway";
+  background-color: #0c122c;
+  background-image: url(../IMG/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0rem 30rem;
+  background-size: 100%;
+}
+
+.stats {
+  max-width: 92rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-end;
+  gap: 3rem;
+  margin: 20rem auto;
+}
+
+.fylo {
+  max-width: 35rem;
+  background-color: #1e2d69;
+  padding: 4rem;
+  border-radius: 1rem 10rem 1rem 1rem;
+}
+
+.fa-file,
+.fa-folder,
+.fa-cloud-arrow-up {
+  font-size: 2.4rem;
+  color: #697ed4;
+}
+
+.file,
+.folder,
+.upload {
+  max-width: 4.8rem;
+  height: 4.8rem;
+  padding: 1.2rem 1.6rem;
+  background-color: #0c122c;
+  border-radius: 1rem;
+}
+
+.folder {
+  padding: 1.2rem 1.2rem;
+}
+
+.upload {
+  padding: 1.2rem 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.storage {
+  max-width: 54rem;
+  height: 15.4rem;
+  background-color: #1e2d69;
+  padding: 4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #dbd9ff;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.progress {
+  margin-top: 1.6rem;
+}
+
+.dialog {
+  max-width: 18rem;
+  background-color: #ffffff;
+  border-radius: 1rem 1rem 0 1rem;
+  padding: 1.6rem 2.4rem;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  position: absolute;
+  right: 4rem;
+  top: -4.7rem;
+}
+
+.dialog::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 30px solid #fff;
+  border-left: 30px solid transparent;
+  bottom: -1.2rem;
+  right: 0;
+}
+
+.dialog p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.dialog .num {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0c122c;
+}
+
+.progress-line {
+  max-width: 46rem;
+  height: 2rem;
+  background-color: #0c122c;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+
+.progress-fill {
+  max-width: 34rem;
+  height: 1.4rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+  padding: 0.2rem;
+}
+
+.point {
+  max-width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: 32.6rem;
+}
+
+.progress-gb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.progress-gb p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #dbd9ff;
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background-image: url(../IMG/bg-mobile.png);
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .stats {
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: 12rem auto;
+  }
+
+  .fylo {
+    width: 40rem;
+  }
+
+  .storage {
+    width: 100%;
+  }
+
+  .dialog {
+    border-radius: 1rem;
+    top: 12rem;
+    right: 13rem;
+  }
+
+  .dialog::after {
+    display: none;
+  }
+}
